@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Website Design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <div class="logo">Creative</div>
+        <img src="img/bg.jpg" class="bg">
+        <div class="content">
+            <h2>Let's Make <br>Something Creative</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae maxime magni ipsam quod, alias
+                repellendus repellat adipisci dolore accusamus repudiandae totam placeat commodi sapiente sint cum nemo,
+                ab facilis aperiam fugiat sunt harum? Illum inventore.</p>
+            <a href="#">Get Started</a>
+        </div>
+        <p class="copyrightText">Ⓒ2022. Ashir</p>
+    </section>
+    <div class="menuToggle" onclick="toggleMenu();"></div>
+    <div class="navigation">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="socialBar">
+            <ul>
+                <li><a href="#"><img src="img/facebook.png"></a></li>
+                <li><a href="#"><img src="img/twitter.png"></a></li>
+                <li><a href="#"><img src="img/instagram.png"></a></li>
+            </ul>
+            <a href="mailto:you@email.com" class="emailBx"><img src="img/email.png"></a>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        function toggleMenu() {
+            var menuToggle = document.querySelector('.menuToggle');
+            var navigation = document.querySelector('.navigation');
+            menuToggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>
